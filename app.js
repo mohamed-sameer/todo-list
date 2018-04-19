@@ -141,6 +141,11 @@ function clearTasks() {
         //remove child which is the whole elemnts with first child
         taskList.removeChild(taskList.firstChild);
     }
+    clearTAsksFromLocalStorage();
+}
+// clear tasks from local storage
+function clearTAsksFromLocalStorage(){
+    localStorage.clear();
 }
 //filter tasks
 function filterTasks(e) {
